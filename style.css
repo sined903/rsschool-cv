@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+
+h1 {
+  color: rgb(65, 81, 117);
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: rgb(65, 81, 117);
+  margin-bottom: 10px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: rgb(200, 200, 200);
+  padding: 10px;
+  margin: 20px 0;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+
