@@ -17,3 +17,19 @@ I am 29 years old, I work as a marketer. In my free time, I enjoy programming. I
 3. Webpack 
 4. Git 
 
+## Code 
+
+```
+const sum = (a, b) => {
+  return a + b;
+}
+``` 
+
+## Education 
+
+Higher education (Marketing)
+
+## Languages
+
+1. Russian (native)
+2. English (A1)
