@@ -1,14 +1,131 @@
+.skills__title, .education__title, .contact__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #313131;
+  line-height: 0.9;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}
+
+.skills, .contact, .name, .header {
+  border-radius: 14px;
+  box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.2);
+  padding: 40px;
+}
+
+.skills__list, .education__list, .contact__list {
+  list-style-type: none;
+  font-size: 17px;
+  color: #313131;
+}
+
+.skills__item, .education__item, .contact__item {
+  margin: 5px 0;
+  position: relative;
+  padding-left: 5px;
+}
+.skills__item::before, .education__item::before, .contact__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 1px;
+  background: #313131;
+  transform: translateX(-50%);
+}
+
+.header {
+  background: #F8E295;
+  margin-bottom: 30px;
+}
+
+.header__nav {
+  height: 100%;
+}
+
+.header__nav-list {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__nav-item {
+  margin: 0 20px;
+}
+
+.header__link {
+  color: #525252;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.header__link:hover {
+  color: #ca3e47;
+}
+
+.cv {
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "name name name name" "skills skills contact contact" "skills skills education education";
+}
+
+.name {
+  grid-area: name;
+  background: #F8B195;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.name__title {
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #313131;
+  line-height: 0.9;
+  letter-spacing: 0px;
+}
+
+.contact {
+  grid-area: contact;
+  background: #CCF895;
+}
+
+.education {
+  grid-area: education;
+  background: #C06C84;
+  border-radius: 14px;
+  box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.2);
+  padding: 40px;
+}
+
+.skills {
+  grid-area: skills;
+  background: #F67280;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 30px;
 }
 
-
-
+/*# sourceMappingURL=style.css.map */
