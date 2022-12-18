@@ -1,4 +1,4 @@
-.skills__title, .education__title, .contact__title {
+.languages__title, .certificate__title, .code__title, .about__title, .skills__title, .education__title, .contact__title {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -10,24 +10,24 @@
   margin-bottom: 20px;
 }
 
-.skills, .contact, .name, .header {
+.languages, .certificate, .code, .about, .skills, .contact, .name, .header {
   border-radius: 14px;
   box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.2);
   padding: 40px;
 }
 
-.skills__list, .education__list, .contact__list {
+.languages__list, .skills__list, .education__list, .contact__list {
   list-style-type: none;
   font-size: 17px;
   color: #313131;
 }
 
-.skills__item, .education__item, .contact__item {
+.languages__item, .skills__item, .education__item, .contact__item {
   margin: 5px 0;
   position: relative;
   padding-left: 5px;
 }
-.skills__item::before, .education__item::before, .contact__item::before {
+.languages__item::before, .skills__item::before, .education__item::before, .contact__item::before {
   content: "";
   position: absolute;
   display: block;
@@ -75,7 +75,7 @@
 .cv {
   display: grid;
   gap: 30px;
-  grid-template-areas: "name name name name" "skills skills contact contact" "skills skills education education";
+  grid-template-areas: "name name name name" "skills skills contact contact" "skills skills education education" "about about about about" "certificate certificate code code" "languages languages languages languages";
 }
 
 .name {
@@ -114,11 +114,52 @@
   background: #F67280;
 }
 
+.about {
+  grid-area: about;
+  background: #F8E295;
+}
+
+.about__text {
+  font-size: 17px;
+  color: #313131;
+}
+
+.code {
+  grid-area: code;
+  background: #F67280;
+}
+
+.code__block {
+  font-size: 17px;
+  color: #313131;
+  background: #dedada;
+  padding: 10px;
+}
+
+.certificate {
+  grid-area: certificate;
+  background: #6C567B;
+}
+
+.certificate__text {
+  font-size: 17px;
+  color: #313131;
+}
+
+.languages {
+  grid-area: languages;
+  background: #CCF895;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
